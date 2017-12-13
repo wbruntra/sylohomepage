@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+<%- include partials/head.ejs %>
+
+</head>
+
+<body>
+  <div class="container-fluid products">
+    <%- include partials/navbar.ejs %>
+    <div id="fullpage">
+
+      <div class="section top-section">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Products</h2>
+          </div>
+        </div>
+        <div class="row top-footer">
+          <div class="col-12 text-center top-buffer">
+            <h2>Hello, world!</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="section non-centered" style="background-color:blue">
+      	<div class="slide">
+          <%- include('partials/quote.ejs',
+           {quoteText: "It ain't over till it's over."}) %>
+        </div>
+      	<div class="slide">
+          <%- include('partials/quote.ejs',
+           {quoteText: "When you come to a fork in the road, take it."}) %>
+        </div>
+      	<div class="slide">
+          <%- include('partials/quote.ejs',
+           {quoteText: "It's like déjà vu all over again."}) %>
+         </div>
+      </div>
+
+    <%- include partials/footer.ejs %>
+  </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/jquery.fullpage.js"></script>
+  <script src="/js/fullpager.js"></script>
+  <!-- <script src="/js/scroller.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>jQuery Scrollify - Pagination Example</title>
+		<meta name="description" content="A jQuery Scrollify example of implementing pagination.">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta property="og:title" content="jQuery Scrollify - Pagination Example">
+		<meta property="og:type" content="website">
+		<meta property="og:description" content="A jQuery Scrollify example of implementing pagination.">
+    <link href="/vendor/bootstrap/css/bootstrap.min.css", rel="stylesheet" />
+
+		<!--[if lt IE 9]>
+		<script src="script/html5shiv.min.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300"/>
+		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="/css/custom.css" />
+
+	</head>
+	<body>
+		<div class="container-fluid">
+			<h1 style="color:black">This is some text</h1>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		  <a class="navbar-brand" href="#">Navbar</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		    <div class="navbar-nav">
+		      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+		      <a class="nav-item nav-link" href="#">Features</a>
+		      <a class="nav-item nav-link" href="#">Pricing</a>
+		      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+		    </div>
+		  </div>
+		</nav>
+
+		<section class="panel home" data-section-name="home">
+			<div class="inner">
+				<div class="vertical-center">
+					<h1>Pagination</h1>
+					<p>Simple navigation for Scrollify sections.</p>
+					<p class="cta"><a href="/scrollify#examples" class="arrow">See more examples</a></p>
+				</div>
+			</div>
+			<div class="social-corner">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://projects.lukehaas.me/scrollify/" data-text="Scrollify - a jQuery plugin that assists scrolling and smoothly snaps to sections." data-via="lukehaas">Tweet</a>
+				<a class="github-button" href="https://github.com/lukehaas/scrollify" data-icon="octicon-star" data-count-href="/lukehaas/scrollify/stargazers" data-count-api="/repos/lukehaas/scrollify#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star lukehaas/scrollify on GitHub">Star</a>
+			</div>
+
+		</section>
+		<section class="panel panel1" data-section-name="second">
+			<div class="inner">
+				<div class="vertical-center">
+					<h2>afterRender()</h2>
+					<p>Use Scrollify's <span class="code">afterRender()</span> callback to build your pagination links.</p>
+				</div>
+			</div>
+		</section>
+		<section class="panel panel2" data-section-name="third">
+			<div class="inner">
+				<div class="vertical-center">
+					<h2>before()</h2>
+					<p>Apply an active class with the <span class="code">before()</span> callback.</p>
+				</div>
+			</div>
+		</section>
+		<section class="panel panel3" data-section-name="fourth">
+			<div class="inner">
+				<div class="vertical-center">
+					<h2>move()</h2>
+					<p>Call <span class="code">$.scrollify.move()</span> in a click event to navigate to sections.</p>
+				</div>
+			</div>
+		</section>
+	</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script src="/js/jquery.scrollify.js"></script>
+
+		<script src="/js/scroller.js"></script>
+	</body>
+</html>

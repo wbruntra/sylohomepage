@@ -1,0 +1,60 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		title jQuery Scrollify - Pagination Example
+		link(href="vendor/bootstrap/css/bootstrap.min.css", rel="stylesheet")    
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:300")
+		link(rel="stylesheet", href="/css/main.css")
+	body
+		nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+			.container
+				a.navbar-brand.js-scroll-trigger(href="#page-top") Start Bootstrap
+				button.navbar-toggler.navbar-toggler-right(type="button", data-toggle="collapse", data-target="#navbarResponsive", aria-controls="navbarResponsive", aria-expanded="false", aria-label="Toggle navigation")
+				| Menu
+				i.fa.fa-bars
+				#navbarResponsive.collapse.navbar-collapse
+				ul.navbar-nav.ml-auto
+				li.nav-item
+				a.nav-link.js-scroll-trigger(href="#about") About
+				li.nav-item
+				a.nav-link.js-scroll-trigger(href="#download") Download
+				li.nav-item
+				a.nav-link.js-scroll-trigger(href="#contact") Contact    
+			section.panel.home(data-section-name="home")
+		.inner
+			.vertical-center
+				h1 Pagination
+				p Simple navigation for Scrollify sections.
+				.social-corner
+				a.twitter-share-button(href="https://twitter.com/share", data-url="http://projects.lukehaas.me/scrollify/", data-text="Scrollify - a jQuery plugin that assists scrolling and smoothly snaps to sections.", data-via="lukehaas") Tweet
+				a.github-button(href="https://github.com/lukehaas/scrollify", data-icon="octicon-star", data-count-href="/lukehaas/scrollify/stargazers", data-count-api="/repos/lukehaas/scrollify#stargazers_count", data-count-aria-label="# stargazers on GitHub", aria-label="Star lukehaas/scrollify on GitHub") Star
+				section.panel.panel1(data-section-name="second")
+		.inner
+			.vertical-center
+				h2 afterRender()
+				p
+				| Use Scrollify's 
+				span.code afterRender()
+				|  callback to build your pagination links.
+				section.panel.panel2(data-section-name="third")
+		.inner
+			.vertical-center
+				h2 before()
+				p
+				| Apply an active class with the 
+				span.code before()
+				|  callback.
+				section.panel.panel3(data-section-name="fourth")
+		.inner
+			.vertical-center
+				h2 move()
+				p
+				| Call 
+				span.code $.scrollify.move()
+				|  in a click event to navigate to sections.
+	script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js")
+	script(src="vendor/bootstrap/js/bootstrap.bundle.min.js")
+	script(src="/js/jquery.scrollify.js")
+	script(src="/js/scroller.js")

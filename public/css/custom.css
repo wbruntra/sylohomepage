@@ -1,0 +1,110 @@
+.colors {
+	background-color: #378996;
+	background-color: #46AAB9;
+	background-color: #875787;
+	background-color: #F9C76D;
+	background-color: #EFF3F6
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.navbar {
+  z-index: 10;
+  font-size: 1.8em;
+	padding: 0 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8);
+}
+
+.nav-link {
+	padding: .7rem 1rem;
+}
+
+.navbar-brand img {
+  height: 48px;
+}
+
+.bg-sylo {
+  background-color: #378996;
+}
+
+.home-image {
+  z-index: 1;
+  position: absolute;
+  top: 15%;
+  right: 4%;
+}
+
+.home-image img {
+  filter:brightness(0) invert(.8);
+  /*filter:invert(100%)*/
+}
+
+.home-front img {
+  height: 250px;
+}
+
+.panel1 i {
+	font-size: 180px;
+}
+
+.bottom {
+  padding: 60px 0;
+  color: black;
+}
+
+.footer p {
+  font-size: 1.4em;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.cta-button {
+	margin-top: 48px;
+}
+
+.top-buffer {
+	padding-top: 100px;
+}
+
+.quote {
+	padding-top: 200px;
+}
+
+.slide i {
+	font-size: 60px;
+}
+
+.benefit-box {
+	text-align: center;
+	padding-bottom: 50px;
+}
+
+.benefit-box i {
+	font-size: 100px;
+}
+
+/* OTHER PAGES */
+
+.products .top-section {
+	background: url("/img/bulls-eye.jpg") no-repeat center center fixed;
+	background-size: cover;
+}
+
+.top-footer {
+	background-color: #378996;
+	height: 380px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+
+/*.background-tint {
+  background-color: rgba(200,100,0,.5); // Tint color
+  background-blend-mode: multiply;
+}*/

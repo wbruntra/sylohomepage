@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>SYLO - Home Page</title>
+  <meta name="description" content="A jQuery Scrollify example of implementing pagination.">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:title" content="jQuery Scrollify - Pagination Example">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="A jQuery Scrollify example of implementing pagination.">
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" , rel="stylesheet" />
+  <link href="/css/jquery.fullpage.css" , rel="stylesheet" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lato|Maven+Pro" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="/css/custom.css" />
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <%- include partials/navbar.ejs %>
+    <div id="fullpage">
+
+      <div class="section non-centered benefits">
+          <div class="row top-buffer">
+            <div class="col-12 text-center">
+              <h2>Brand and Creator Benefits</h2>
+            </div>
+          </div>
+          <div class="row top-buffer">
+            <div class="col-2 offset-1 benefit-box">
+              <i class="material-icons">lock_outline</i>
+
+            </div>
+            <div class="col-2 benefit-box">
+              <i class="material-icons">warning</i>
+
+            </div>
+            <div class="col-2 benefit-box">
+              <i class="material-icons">poll</i>
+
+            </div>
+            <div class="col-2 benefit-box">
+              <i class="material-icons">sort</i>
+
+            </div>
+            <div class="col-2 benefit-box">
+              <i class="material-icons">share</i>
+
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-2 offset-1 benefit-box">
+              <i class="material-icons">grade</i>
+
+            </div>
+            <div class="col-2 benefit-box">
+              <i class="material-icons">visibility</i>
+
+            </div>
+            <div class="col-2 benefit-box">
+              <i class="material-icons">content_copy</i>
+
+            </div>
+            <div class="col-2 benefit-box">
+              <i class="material-icons">person_add</i>
+
+            </div>
+            <div class="col-2 benefit-box">
+              <i class="material-icons">show_chart</i>
+
+            </div>
+          </div>
+
+      </div>
+
+      <div class="section home">
+        <div class="row vertical-center home-front">
+          <div class="col-10 col-lg-4 offset-sm-1">
+            <h2>The Standard for Influencer Marketing Measurement</h2>
+            <p>SYLO verifies and validates creators, strategies, and campaign performance.</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-lg btn-primary cta-button" role="button">Learn More</a>
+            </div>
+          </div>
+          <div class="col-lg-4 offset-sm-2 d-none d-lg-block">
+            <img src="/img/preview-laptop.png" />
+          </div>
+        </div>
+        <span class="home-image">
+            <img src="/img/world-map.png" />
+          </span>
+      </div>
+
+      <div class="section panel1">
+
+          <div class="container">
+          <div class="row top-buffer">
+            <div class="col-12 text-center">
+              <h2>Providing Verification and Transparency that the Influencer Marketing Space Needs</h2>
+            </div>
+          </div>
+          <div class="row top-buffer">
+            <div class="col-md text-center">
+              <!-- <img src="/img/Influencers.png"  /> -->
+              <i class="material-icons">group</i>
+              <p>Influencers register and authenticate their social media accounts, giving SYLO read-only access to public, private, and proprietary data on all of their social media posts. They can also see their content performance.</p>
+            </div>
+            <div class="col-md text-center">
+              <i class="material-icons">collections_bookmark</i>
+              <p>SYLO classifies each of the creators’ social media posts using industry-established content themes, and then runs the data on these posts through our algorithm to generate the SYLO Score and content benchmarks.</p>
+            </div>
+            <div class="col-md text-center">
+              <i class="material-icons">web</i>
+              <p>Brands, agencies, and talent managers access SYLO’s user dashboard to evaluate campaign, influencer, and content performance in real-time, as well as create or request reports for in-depth analyses.</p>
+            </div>
+          </div>
+          </div>
+      </div>
+      <div class="section non-centered what-is-score">
+        <div class="container">
+          <div class="row top-buffer">
+            <div class="col-12 text-center">
+              <h2>What is the Sylo score?</h2>
+            </div>
+          </div>
+          <div class="row top-buffer">
+            <div class="col-12 text-center">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/TRtpPy16Yg4" frameborder="0" allowfullscreen></iframe>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="section non-centered" style="background-color:blue">
+      	<div class="slide">
+          <%- include('partials/quote.ejs',
+           {quoteText: "It ain't over till it's over."}) %>
+        </div>
+      	<div class="slide">
+          <%- include('partials/quote.ejs',
+           {quoteText: "When you come to a fork in the road, take it."}) %>
+        </div>
+      	<div class="slide">
+          <%- include('partials/quote.ejs',
+           {quoteText: "It's like déjà vu all over again."}) %>
+         </div>
+      </div>
+
+    <%- include partials/footer.ejs %>
+  </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/js/jquery.fullpage.js"></script>
+  <script src="/js/fullpager.js"></script>
+  <!-- <script src="/js/scroller.js"></script> -->
+</body>
+
+</html>
